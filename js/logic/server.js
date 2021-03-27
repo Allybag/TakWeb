@@ -54,11 +54,11 @@ var server = {
       this.connection.onclose = function (e) {
           document.getElementById('login-button').textContent = 'Sign up / Login';
           $('#onlineplayers').addClass('hidden');
-          document.getElementById("onlineplayersbadge").innerHTML = "0";
+          document.getElementById("onlineplayersbadge").innerHTML = "?";
           document.getElementById("seekcount").innerHTML =
-              "<span class='nonbot'>0 </span>&#183;<span class='botcount'> 0</span>";
+              "<span class='nonbot'>? </span>&#183;<span class='botcount'> ?</span>";
           document.getElementById("gamecount").innerHTML =
-              "<span class='nonbot'>0 </span>&#183;<span class='botcount'> 0</span>";
+              "<span class='nonbot'>? </span>&#183;<span class='botcount'> ?</span>";
           document.getElementById("scratchsize").disabled = false;
           board.scratch = true;
           board.observing = false;
